@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="http://schema.org/Event" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ANZSUP 2015: {{ page.title }}</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- http://getbootstrap.com/customize/?id=6281218 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/anzsup.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:300,400,400italic,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- meta-data for google+ -->
+    <meta itemprop="name" content="ANZSUP 2015">
+    <meta itemprop="description" content="Australian and New Zealand School in Ultracold Physics, Dunedin, 2015.">
+    <link rel="canonical" href="http://www.anzsup.org">
+
+    <!-- meta-data for facebook -->
+    <meta property="og:title" content="Australian and New Zealand School in Ultracold Physics">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.anzsup.org">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="ANZSUP 2015">
+</head>
+<body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61857543-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    <div id="wrap">
+
+    <div class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+      <div class="navbar-brand">
+        <span class="anzsup-abbrev">anzsup</span> <span class="anzsup-year">2015</span>
+      </div>
+      </div>
+      <ul class="nav navbar-nav">
+        {% assign pages_list = site.pages %}
+        {% assign group = 'navigation' %}
+        {% include pages_list %}
+      </ul>
+    </div>
+    </div>
+
+    <div class="container">
+
+    {{content}}
+
+    </div>
+
+    </div>
+
+    <div id="footer">
+      <div class="container">
+      <div class="row">
+      <div class="col-md-12">
+        <small>
+        <p class="text-muted credit">
+            &copy; Australian and New Zealand School in Ultracold Physics, 2015 |
+            Site by Bogdan Opanchuk.
+            Powered by <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://getbootstrap.com">Bootstrap</a>.
+        </p>
+        </small>
+      </div>
+      </div>
+      </div>
+    </div>
+</body>
+</html>
